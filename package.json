@@ -1,0 +1,48 @@
+{
+  "name": "super-tailwind-merge",
+  "version": "0.0.1",
+  "description": "Utility function to effectively merge tailwindcss in a readable format",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "tailwindcss",
+    "tailwind",
+    "css",
+    "classes",
+    "className",
+    "classList",
+    "merge",
+    "conflict",
+    "override",
+    "super-merge",
+    "tailwind-merge",
+    "clsx"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ace-builds/super-tailwind-merge.git"
+  },
+  "author": "Augustine Ezeh",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "bugs": {
+    "url": "https://github.com/ace-builds/super-tailwind-merge/issues"
+  },
+  "homepage": "https://github.com/ace-builds/super-tailwind-merge#readme",
+  "dependencies": {
+    "classnames": "^2.4.0",
+    "tailwind-merge": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3"
+  }
+}
